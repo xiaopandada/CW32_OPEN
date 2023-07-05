@@ -1,0 +1,65 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.14.1
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Cortex-M0+, 1, LIC=SDA0P-MH6T6-FW42N-YAK5T-BFK8L-B3ICA
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Standard  Version: 5.36.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.36.0.0
+Dialog DLL:      DARMCM1.DLL V1.19.4.0
+Target DLL:      CMSIS_AGDI.dll V1.33.0.0
+Dialog DLL:      TARMCM1.DLL V1.14.4.0
+ 
+<h2>Project:</h2>
+C:\Users\admin\Desktop\CW32\实验一 流水灯实验\GPIO.uvprojx
+Project File Date:  06/14/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'Target 1'
+*** Scatter Error: no default 'Read/Write' range selected
+compiling interrupts_cw32f030.c...
+compiling MAIN.c...
+USER\MAIN.c(22): warning:  #167-D: argument of type "void (*)(void)" is incompatible with parameter of type "void (*)(uint32_t)"
+        TimerSlice_SetTask(SLICE_ID_LED,LED_DELAY_TIME,led_test,0);
+USER\MAIN.c: 1 warning, 0 errors
+compiling Timer.c...
+compiling Sys.c...
+compiling tasker.c...
+linking...
+Program Size: Code=2696 RO-data=324 RW-data=20 ZI-data=1204  
+FromELF: creating hex file...
+".\Objects\GPIO.axf" - 0 Error(s), 1 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.8.0.pack
+                ARM::CMSIS:CORE:5.5.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.5.0
+
+<h2>Collection of Component include folders:</h2>
+  C:\Users\admin\Desktop\CW32\实验一 流水灯实验\RTE
+  C:\Users\admin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include
+  C:\Users\admin\AppData\Local\Arm\Packs\PS\CW32F030_DFP\1.0.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.5.0
+      Source file:   CMSIS\Core\Template\ARMv8-M\main_s.c
+      Include file:  CMSIS\Core\Include\tz_context.h
+      Source file:   CMSIS\Core\Template\ARMv8-M\tz_context.c
+</pre>
+</body>
+</html>
